@@ -16,8 +16,9 @@ this is small project that was improvised by [pypresence](https://github.com/qwe
 
 # Requirments
 - [psutil](https://pypi.org/project/psutil/)
-- [pypresence](https://github.com/qwertyquerty/pypresence)
+- [pypresence](https://github.com/qwertyquerty/pypresence) and their requirments of course
+- [python](https://www.python.org/)
 
 # Notes
+- You need to put your client ID in the script, it's the only thing that doesn't update as well from the config file (if needed I can change that and add it to the config file)
 - To turn the script off once you ran it, open cmd and type `tasklist`, find the one called pythonw and copy the id, then type in `taskkill /pid ID /f`
-
