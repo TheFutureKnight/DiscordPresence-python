@@ -8,7 +8,6 @@ import urllib.request
 
 from pypresence.exceptions import InvalidPipe
 
-client_id = 'Put your ID from your discord app here'
 firstrun = True
 startup = True
 start_time=time.time()
@@ -22,7 +21,7 @@ while True:
             config = configpar['Config']
         else:
             with open("config.ini", "w+") as f:
-                f.write("[Config]\nstate=\ndetails=\nlarge_image=\nsmall_image=\nlarge_text=\nsmall_text=\nbutton1=\nbutton1_url=\nbutton2=\nbutton2_url=")
+                f.write("[Config]\nclient_id=\nstate=\ndetails=\nlarge_image=\nsmall_image=\nlarge_text=\nsmall_text=\nbutton1=\nbutton1_url=\nbutton2=\nbutton2_url=")
             print("Config file not found!")
             continue
 
@@ -35,6 +34,7 @@ while True:
                 return None
         
         if firstrun == True:
+            client_id = check("client_id")
             RPC = Presence(client_id) 
             RPC.connect()
             firstrun = False
