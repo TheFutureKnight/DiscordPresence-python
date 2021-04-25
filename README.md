@@ -22,3 +22,4 @@ this is small project that was improvised by [pypresence](https://github.com/qwe
 # Notes
 - You need to put your client ID in the script, it's the only thing that doesn't update from the config file (if needed I can change that and add it to the config file)
 - To turn the script off once you ran it, open cmd and type `tasklist`, find the one called pythonw and copy the id, then type in `taskkill /pid ID /f`
+- The client_id is the application client id from [discord developer portal](https://discord.com/developers)
